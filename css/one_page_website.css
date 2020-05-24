@@ -1,0 +1,63 @@
+/* Fonts for website */
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#home {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* End fonts for website */
+
+/* heading sytles */
+
+h1 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* END Heading styles */
+
+/* CONTACT INFO */
+
+#contact {
+    text-align: center;
+}
+.container {
+    padding: 0, auto;
+}
+
+
+.form-wraper { 
+    width: 50%;
+    border-radius: 7px;
+    background-color: #066917;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+form input[type="text"] {
+    width: 50%;
+    margin: 2px auto;
+    color: turquoise;
+    background-color: black;
+    border: 2px solid #dfcf9e;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    margin: 2px auto;
+}
+
+/* END CONTACT INFO */
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
