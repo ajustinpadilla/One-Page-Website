@@ -4,6 +4,7 @@
 		<title>Climbing Goals</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -38,15 +39,78 @@
 		<!-- GALLERY -->
 		<section id="gallery">
 			<h3>These are climbs I would like to try and do with in the next year!!!</h3>
-			<div>
-				<img src="C:\Users\ajust\Desktop\The_Tech_Academy\Challenges\images\Blue_mask.jpg" alt="Blue Mask-5.13c"><br>
-					<p>Blue Mask - 5.13c</p><br>
-				<img src="C:\Users\ajust\Desktop\The_Tech_Academy\Challenges\images\Flower_power.jpg" alt="Flower Power-V11"><br>
-					<p>Flower Power - V11</p><br>
-				<img src="C:\Users\ajust\Desktop\The_Tech_Academy\Challenges\images\Moonlight_buttress.jpg" alt="Moonlight Buttress-5.12c"><br>
-					<p>Moonlight Buttress - 5.12c</p><br>
-				<img src="C:\Users\ajust\Desktop\The_Tech_Academy\Challenges\images\Free_rider.jpg" alt="Free Rider-5.13 PG13"><br>
-					<p>Free Rider - 5.13a PG13</P><br>
+			<!-- Images used to open lightbox -->
+			<div class="row">
+				<div class="column">
+					<img src="C:\Users\ajust\Desktop\The_Tech_Academy\Challenges\images\Blue_mask.jpg" alt="Blue Mask-5.13c" onclick="openModal(); currentSlide(1)" class="hover-shadow"><br>
+						<p>Blue Mask - 5.13c</p><br>
+				</div>
+				<div class="column">
+					<img src="C:\Users\ajust\Desktop\The_Tech_Academy\Challenges\images\Flower_power.jpg" alt="Flower Power-V11" onclick="openModal(); currentSlide(2)" class="hover-shadow"><br>
+						<p>Flower Power - V11</p><br>
+				</div>
+				<div class="column">
+					<img src="C:\Users\ajust\Desktop\The_Tech_Academy\Challenges\images\Moonlight_buttress.jpg" alt="Moonlight Buttress-5.12c" onclick="openModal(); currentSlide(3)" class="hover-shadow"><br>
+						<p>Moonlight Buttress - 5.12c</p><br>
+				</div>
+				<div class="column">
+					<img src="C:\Users\ajust\Desktop\The_Tech_Academy\Challenges\images\Free_rider.jpg" alt="Free Rider-5.13 PG13" onclick="openModal(); currentSlide(4)" class="hover-shadow"><br>
+						<p>Free Rider - 5.13a PG13</P><br>
+				</div>
+			</div>
+
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+					
+					<div class="mySlides">
+						<div class="numbertext">1/4</div>
+						<img src="../Challenges/images/Blue_mask.jpg" alt="" style="width: auto;">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">2/4</div>
+						<img src="../Challenges/images/Flower_power.jpg" alt="" style="width: auto;">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">3/4</div>
+						<img src="../Challenges/images/Moonlight_buttress.jpg" alt="" style="width: auto;">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">4/4</div>
+						<img src="../Challenges/images/Free_rider.jpg" alt="" style="width: auto;">
+					</div>
+
+					<!-- Next/pervious controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Caption Text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!-- Thumbnail image controls -->
+					<div class="column">
+						<img class="demo" src="../Challenges/images/Blue_mask.jpg" onclick="currentSlide(1)" alt="Blue Mask-5.13c">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="../Challenges/images/Flower_power.jpg" onclick="currentSlide(2)" alt="Flower Power-V11">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="../Challenges/images/Moonlight_buttress.jpg" onclick="currentSlide(3)" alt="Moonlight Buttress-5.12c">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="../Challenges/images/Free_rider.jpg" onclick="currentSlide(4)" alt="Free Rider-5.13 PG13">
+					</div>
+
+				</div>
 			</div>
 		</section>
 		<!-- END GALLERY -->
